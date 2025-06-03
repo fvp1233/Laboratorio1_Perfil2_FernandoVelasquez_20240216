@@ -24,7 +24,7 @@ public class Main {
         System.out.println(productos);
 
         do {
-            System.out.println("--Escoga una opción");
+            System.out.println("--------------Escoga una opción--------------");
             System.out.println("1. Actualiza el stock de un producto");
             System.out.println("2.Mostrar los productos");
             System.out.println("3.Mostrar los productos y su stock bajo");
@@ -63,7 +63,7 @@ public class Main {
 
     public static void updateStock () {
         //Pedir el id
-        System.out.println("Escriba el id del producto");
+        System.out.println("--------------Escriba el id del producto--------------");
         //Guardar el id
         int ID = sc.nextInt();
         int NStock = 0;
@@ -85,7 +85,7 @@ public class Main {
     public static void StockBajo() {
         for(Map.Entry<Integer,Integer> entrada: productos.entrySet()){
             if (entrada.getValue() <10){
-                System.out.println("Stock menor a 10");
+                System.out.println("--------------Stock menor a 10--------------");
                 System.out.println("ID del producto: " + entrada.getKey() + " sotck disponible: " + entrada.getValue());
             }
         }
